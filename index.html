@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="IVAJ — Portal Jove de oportunidades, ayudas, Carnet Jove, formación, ocio y participación.">
+  <meta name="theme-color" content="#b71c2b">
+  <title>Inicio · IVAJ</title>
+  <link rel="icon" href="./icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { darkMode: 'class', theme: { extend: {
+      colors: { ivaRed:'#b71c2b', ivaDark:'#861522', ivaSoft:'#fdf0f2' },
+      fontFamily: { sans: ['Inter','system-ui','sans-serif'] }
+    }}};
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="inicio">
+
+<div id="site-header"></div>
+
+<main id="contenido">
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden">
+    <article class="hero-slide active items-center"
+      style="background-image: linear-gradient(90deg, rgba(10,18,27,.94), rgba(10,18,27,.7), rgba(10,18,27,.2)), url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=2200&q=85');">
+      <div class="max-w-7xl w-full mx-auto px-5 sm:px-8 lg:px-10">
+        <div class="max-w-3xl">
+          <span class="hero-label">
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span> IVAJ · Portal Jove
+          </span>
+          <h1 class="hero-title">Todo lo que necesitas<br><span>para avanzar.</span></h1>
+          <p class="hero-text">Ayudas, formación, empleo, experiencias, voluntariado y oportunidades para la juventud.</p>
+          <div class="flex flex-col sm:flex-row gap-3 mt-7">
+            <a href="./ocio.html" class="btn btn-primary">Explorar oportunidades <i class="fa-solid fa-arrow-right"></i></a>
+            <a href="./información.html" class="btn bg-white/10 border border-white/25 text-white">Más información</a>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+
+  <!-- TARJETAS DE ACCESO RÁPIDO -->
+  <section class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-14">
+    <div class="text-center mb-10">
+      <span class="eyebrow">SECCIONES</span>
+      <h2 class="section-title">Explora el portal</h2>
+      <p class="section-description mx-auto">Todo lo que ofrece el IVAJ, organizado por áreas.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <a href="./informacion.html" class="pro-card p-6 block no-underline text-inherit">
+        <div class="card-icon bg-blue-50 dark:bg-blue-950/30 text-blue-600 mb-4"><i class="fa-solid fa-circle-info"></i></div>
+        <h3 class="card-title">Información</h3>
+        <p class="card-text">Recursos y servicios del IVAJ para jóvenes.</p>
+      </a>
+      <a href="./ocio.html" class="pro-card p-6 block no-underline text-inherit">
+        <div class="card-icon bg-purple-50 dark:bg-purple-950/30 text-purple-600 mb-4"><i class="fa-solid fa-gamepad"></i></div>
+        <h3 class="card-title">Ocio y tiempo libre</h3>
+        <p class="card-text">Cultura, viajes y actividades para jóvenes.</p>
+      </a>
+      <a href="./carnet.html" class="pro-card p-6 block no-underline text-inherit">
+        <div class="card-icon bg-ivaSoft dark:bg-red-950/30 text-ivaRed mb-4"><i class="fa-solid fa-id-card"></i></div>
+        <h3 class="card-title">Carnet Jove</h3>
+        <p class="card-text">Ventajas en cultura, ocio, formación y viajes.</p>
+      </a>
+      <a href="./albergues.html" class="pro-card p-6 block no-underline text-inherit">
+        <div class="card-icon bg-emerald-50 dark:bg-emerald-950/30 text-emerald-600 mb-4"><i class="fa-solid fa-bed"></i></div>
+        <h3 class="card-title">Albergues Juveniles</h3>
+        <p class="card-text">Alojamiento y servicios para jóvenes viajeros.</p>
+      </a>
+      <a href="./campamentos.html" class="pro-card p-6 block no-underline text-inherit">
+        <div class="card-icon bg-amber-50 dark:bg-amber-950/30 text-amber-600 mb-4"><i class="fa-solid fa-campground"></i></div>
+        <h3 class="card-title">Campamentos</h3>
+        <p class="card-text">Actividades y experiencias de verano.</p>
+      </a>
+      <a href="./residencia.html" class="pro-card p-6 block no-underline text-inherit">
+        <div class="card-icon bg-cyan-50 dark:bg-cyan-950/30 text-cyan-600 mb-4"><i class="fa-solid fa-building"></i></div>
+        <h3 class="card-title">Residencia</h3>
+        <p class="card-text">Recursos de alojamiento juvenil.</p>
+      </a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="px-4 pb-20">
+    <div class="max-w-5xl mx-auto rounded-xl bg-ivaRed text-white p-8 sm:p-12 text-center">
+      <h2 class="text-3xl sm:text-5xl font-black leading-tight">Tu próxima oportunidad empieza aquí.</h2>
+      <p class="max-w-2xl mx-auto text-white/80 mt-5">Explora, participa, aprende y conecta.</p>
+    </div>
+  </section>
+
+</main>
+
+<div id="site-footer"></div>
+
+<!-- Modal favoritos -->
+<div id="favoritesModal" class="modal fixed inset-0 z-[105] bg-slate-950/75 backdrop-blur-sm flex items-center justify-center p-4">
+  <div class="modal-panel w-full max-w-lg bg-white dark:bg-slate-900 rounded-xl shadow-2xl p-6">
+    <div class="flex justify-between items-center">
+      <h2 class="text-2xl font-black">Mis favoritos</h2>
+      <button id="closeFavorites" type="button" class="w-10 h-10 rounded-lg bg-slate-100 dark:bg-slate-800"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div id="favoritesList" class="space-y-2 mt-6"></div>
+  </div>
+</div>
+
+<!-- Toast -->
+<div id="toast" class="hidden fixed top-24 left-1/2 z-[200] -translate-x-1/2 max-w-[90vw] bg-slate-900 dark:bg-white text-white dark:text-slate-900 px-5 py-3 rounded-lg shadow-2xl text-xs font-bold text-center"></div>
+
+<!-- Chat -->
+<div id="chatContainer" class="fixed right-4 bottom-20 md:bottom-6 z-[90]">
+  <div id="chatWindow" class="hidden w-[calc(100vw-2rem)] sm:w-[380px] bg-white dark:bg-slate-900 rounded-xl shadow-2xl border border-slate-200 dark:border-slate-700 overflow-hidden mb-3">
+    <div class="bg-ivaRed text-white p-4 flex justify-between items-center">
+      <strong>Asistente IVAJ</strong>
+      <button id="closeChat" type="button"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="h-72 p-4 text-sm">Chat de demostración.</div>
+  </div>
+  <button id="chatButton" type="button" class="chat-bubble ml-auto w-14 h-14 rounded-full bg-ivaRed text-white shadow-xl flex items-center justify-center">
+    <i class="fa-solid fa-comments text-lg"></i>
+  </button>
+</div>
+
+<script src="js/main.js"></script>
+</body>
+</html>
